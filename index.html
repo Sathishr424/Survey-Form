@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Share Tech Mono' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style type="text/css">
+      a:hover {text-decoration: none;}
+      *{ font-family: Poppins, sans-serif; }
+      #container{
+        width: 40%;
+        position: absolute;
+        left:50%;
+        transform: translate(-50%,0%);
+      }.shadow{
+        box-shadow: 1px 1px 10px 2px #224b4b;
+      }label, input{
+        display: block;
+      }.inline{
+        display: inline-block;
+        width: auto;
+      }input,textarea{width: 100%;}
+    </style>
+  </head>
+  <body style="overflow: auto; background-color: ghostwhite;">
+    <div id='container' class='my-4 py-4'>
+      <div style="text-align: center;">
+        <h1 id='title'>My <a href='https://github.com/kratos462?tab=repositories'>Github</a> page Survey Form</h1>
+        <p id='description'>Please do viist my <a href='https://github.com/kratos462?tab=repositories'>page</a> and give your valuable feedback</p>
+      </div>
+      <div class='shadow px-5 py-2' style='display: flex; justify-content: center; flex-direction: column; flex-grow: 4; opacity: 0.8; background-color: #212529; color: white;'>
+        <form id='survey-form'>
+          <div class='my-4'>
+            <label for='name' id='name-label'>Name</label>
+            <input type="text" id='name' placeholder="Enter your name" required>
+          </div>
+          <div class='mb-4'>
+            <label for='email' id='email-label'>Email</label>
+            <input type="email" id='email' placeholder="Enter your email" required>
+          </div>
+          <div class='mb-4'>
+            <label for='number' id='number-label'>Age(optional)</label>
+            <input type="number" id='number' placeholder="Age" max='60' min="12">
+          </div>
+          <div class='mb-4'>
+            <label for='dropdown' id='lang-label'>What language do you think I need to improve</label>
+            <select id='dropdown' class='p-1' required>
+              <option value='C++'>C++</option>
+              <option value='Python'>Python</option>
+              <option value='JavaScript'>JavaScript</option>
+              <option value='HTML/CSS'>HTML/CSS</option>
+            </select>
+          </div>
+          <div class='mb-4'>
+            <label>What is your favorite language</label>
+            <input type="radio" id='c' class='inline' name='favLanguage' value='c'>
+            <label for='c' class='inline'>C++</label>
+            <br>
+            <input type="radio" id='python' class='inline' name='favLanguage' value='python'>
+            <label for='python' class='inline'>Python</label>
+            <br>
+            <input type="radio" id='java' class='inline' name='favLanguage' value='java'>
+            <label for='java' class='inline'>Java</label>
+            <br>
+            <input type="radio" id='javascript' class='inline' name='favLanguage' value='javascript'>
+            <label for='javascript' class='inline'>JavaScript</label>
+            <br>
+          </div>
+          <div class='mb-4'>
+            <label>Please choose the projects you liked</label>
+            <input type="checkbox" id='markdown' class='inline' value="markdown">
+            <label for='markdown' class='inline'>Github flavored Markdown Previewer</label>
+            <br>
+            <input type="checkbox" id='RQG' class='inline' value="RQG">
+            <label for='RQG' class='inline'>Random Quote Generator</label>
+            <br>
+            <input type="checkbox" id='pomodoro' class='inline' value="pomodoro">
+            <label for='pomodoro' class='inline'>Pomodoro Clock</label>
+            <br>
+            <input type="checkbox" id='SAV' class='inline' value="SAV">
+            <label for='SAV' class='inline'>Sorting Algorithm Visulizer</label>
+          </div>
+          <div class='my-4'>
+            <label for='feedback'>Any feedbacks or suggestion?</label>
+            <textarea id='feedback' rows='5'></textarea>
+          </div>
+          <input type="submit" name="submit" id='submit'>
+        </form>
+      </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+      
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
